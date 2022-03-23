@@ -1,0 +1,1217 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Longfellow Market  | </title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="fonts/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" crossorigin="anonymous">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/feature_sections.css">
+    <link type="text/css" href="css/mobileFixedNavbar.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style type="text/css">
+
+/*
+ * -----------------------------------
+ *     html elements
+ * -----------------------------------
+ */
+
+body {
+    background: url(images/fruitsvegetablesbackground_jpg.jpeg) #E2E0DF center center fixed no-repeat;
+    background-size: cover;
+}
+
+body, html {
+    color:#333;
+}
+
+h1, h2, h3, h4 {
+    color:#D90404;
+}
+
+a, a:link, a:active, a:visited, a:hover {
+    color:#D90404;
+}
+
+/*
+ * -----------------------------------
+ *      typeography
+ * -----------------------------------
+ */
+body,html {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-size:14px;
+}
+
+h1, h2, h3, h4, .title {
+    font-family: 'Roboto', Arial Narrow, Helvetica, Arial, sans-serif;
+    font-weight:100;
+    text-transform: uppercase;
+}
+
+.main_navigation li.nav_item {
+  font-family: 'Roboto', Arial Narrow, Helvetica, Arial, sans-serif;
+  line-height: 40px;
+  font-size: 18px;
+  font-weight:100;
+  text-transform: uppercase;
+}
+
+.main_navigation ul.dropdown-menu {
+  font-weight:normal;
+  text-transform: uppercase;
+  font-family: 'Roboto', Arial Narrow, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.footer-title {
+    font-size: 16px;
+    color: #FFF;
+}
+
+/*
+ * -----------------------------------
+ *      class components
+ * -----------------------------------
+ */
+
+.page-color, .title.page-color, a.page-color-link, a.page-color-link:link, a.page-color-link:active, a.page-color-link:visited, a.page-color-link:hover {
+    color:#333;
+}
+
+.title, .title_color {
+    color:#D90404;
+}
+
+.inverse_header_color {
+    background:#D90404;
+    color:#FFF;
+}
+
+.title_inverse_color {
+    background:#F2B705;
+    color:#FFF;
+}
+
+.link_color {
+    color:#D90404;
+}
+
+.no-transform {
+    text-transform: none;
+}
+
+.nav_color, .nav_color a {
+    background:#D90404;
+    color:#FFF;
+}
+
+.nav_color a:focus, .nav_color a:hover {
+    text-decoration: none;
+}
+
+.nav_color .dropdown-menu > li > a {
+    color: #FFF;
+}
+
+.nav_color .dropdown-menu > li > a:focus, .nav_color .dropdown-menu > li > a:hover {
+    background:#F2B705;
+}
+
+.nav_hover_color > li > a:focus, .nav_hover_color > li > a:hover {
+    text-decoration: none;
+    background-color: #F2B705;
+}
+
+.nav_hover_color > li > a {
+    display: block;
+}
+
+.button_color {
+    background:#F27405;
+    border-color:#F27405;
+    color:#FFF;
+}
+
+ul.button_color_list {
+    list-style-type: none;
+}
+
+ul.button_color_list li:before {
+    /* Unicode bullet symbol */
+    content: '\2022 ';
+    /* Bullet color */
+    color: #F27405;
+    padding-right: 0.5em;
+}
+
+ul.bullet_color_list {
+    list-style-type: none;
+}
+
+ul.bullet_color_list li:before{
+    /* Unicode bullet symbol */
+    content: '\2022 ';
+    /* Bullet color */
+    color: #D90404;
+    padding-right: 0.5em;
+}
+
+.bullet_color {
+    color: #D90404;
+}
+
+.feature-section.theme-colored .feature-box.first .feature-box-background, .feature-box.first .feature-box-background.theme-colored {
+    background-color: #F27405;
+}
+.feature-section.theme-colored .feature-box.second .feature-box-background, .feature-box.second .feature-box-background.theme-colored {
+    background-color: #F2B705;
+}
+.feature-section.theme-colored .feature-box.third .feature-box-background, .feature-box.third .feature-box-background.theme-colored {
+    background-color: #6E8C03;
+}
+
+/*
+ * -----------------------------------
+ *      bootstrap overrides
+ * -----------------------------------
+ */
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+    color: #fff;
+    background-color: #D90404;
+}
+
+.nav > li > a:focus, .nav > li > a:hover {
+    color: #fff;
+    background-color: #F2B705;
+}
+
+ul.pager a {
+    color: #fff;
+    background-color: #D90404;
+}
+
+ul.pager a:focus, ul.pager a:hover {
+    color: #fff;
+    background-color: #F2B705;
+}
+
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+    color: #fff;
+    background-color: #D90404;
+    border-color: #D90404;
+}
+
+.pagination > li > a, .pagination > li > span {
+    color: #D90404;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.search-box-widget .input-group-btn > .btn {
+    background-color:#F27405;
+}
+/*
+ * -----------------------------------
+ *      sections
+ * -----------------------------------
+ */
+
+#pageContainer {
+    background:;
+}
+
+#pageContent {
+    background:rgba(255,255,255,.85) !important;
+}
+
+
+/* if no header color and no wrapper color, use the page_bg-color */
+header {
+    background:rgba(255,255,255,.85) !important;
+}
+
+
+.swiper-button {
+    
+    color: #ccc;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    
+    background: #ccc;
+}
+
+#storeAppFooterLogo {
+    background-color: #43d4df;
+    background-image: url("images/Bright_Aisle_Logo.png");
+}
+
+
+#at4-share a.at-share-btn.at-svc-facebook .at-icon-wrapper {
+    background-color: #F27405 !important;
+}
+
+#at4-share a.at-share-btn.at-svc-twitter .at-icon-wrapper {
+    background-color: #F2B705 !important;
+}
+
+#at4-share a.at-share-btn.at-svc-pinterest_share .at-icon-wrapper {
+    background-color: #6E8C03 !important;
+}
+
+#at4-share a.at-share-btn.at-svc-compact .at-icon-wrapper {
+    background-color: #D90404 !important;
+}
+
+</style>
+
+    <script async src="js/analytics.js"></script><script>
+var MSCWave = {
+    publicApiUrl: "https://longfellowmarket.com",
+    siteDomain: "longfellowmarket.com",
+    siteId: 21171,
+    normalizePagePath: function(page_path) {
+        if(page_path.substr(0,1) !== '/') {
+            page_path = '/' + page_path;
+        }
+        return page_path;
+    },
+    getAdminApiUrl: function(page_path) {
+        return this.adminApiUrl + this.normalizePagePath(page_path);
+    },
+    getPublicApiUrl: function(page_path) {
+        return this.publicApiUrl + this.normalizePagePath(page_path);
+    },
+    getWebUrl: function(page_path) {
+        return "https://" + this.siteDomain + this.normalizePagePath(page_path);
+    }
+};
+</script>
+    <meta name="keywords" content="grocery store, supermarket, fresh produce, deli, local, independent grocer, meat, bakery">
+<meta name="description" content="Longfellow Market  proudly serves the Minneapolis,MN area.  Come in for the best grocery experience in town.  We're open Monday - Sunday7:00 AM - 8:00 PM">
+
+<meta name="referrer" content="always">
+
+<meta name="geo.placename" content="Minneapolis,MN">
+<meta name="geo.region" content="US-MN">
+
+        <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+
+  <link type="text/css" href="css/modal.css" rel="stylesheet">
+  <meta name="csrf-token" content="ekMEJoTFuHFAQZgEklQs055tyBNsaMjdUNqod8Hq">
+
+    
+
+    
+</head>
+<body>
+    
+    <aside id="topHeader" class="navbar-fixed-top hidden-sm hidden-xs" role="complementary" aria-label="Store Hours and Location">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="left_section" itemscope itemtype="//schema.org/LocalBusiness" aria-label="Store hours and phone number">
+                <!-- Monday-Saturday 8:00 am - 7:00pm • Sunday 12:00 am - 4:00 pm • (480) 639-1200 -->
+                Monday - Sunday • 7:00 AM - 8:00 PM • •
+                <span itemprop="telephone">(612) 353-5078</span>
+            </div>
+
+            <div class="right_section">
+                                <div id="store_address" itemscope itemtype="//schema.org/LocalBusiness" aria-label="Store Address">
+                3815 East Lake Street, Minneapolis, MN
+                </div>
+                            </div>
+
+        </div>
+
+    </div>
+</aside> <!-- /top_header -->
+
+    <div id="pageContainer" class="container">
+
+        <header>
+            <div id="pageHeader" class="row hidden-xs">
+                <div class="col-lg-10 col-lg-offset-1 col-md-12"> <!-- keeps content centered within page_wrap -->
+                    <div class="page-header-left col-sm-6" itemscope itemtype="//schema.org/LocalBusiness" aria-label="Store Logo">
+                    <img itemprop="image logo" class="logo" src="images/bc1ea3_LongfellowMarket_Logo1.jpg" aria-hidden="true" alt role="presentation">
+            </div>
+
+    <div class="page-header-right col-sm-6">
+
+        <div class="row">
+            <div class="col-sm-12"> 
+            
+                            <div id="signinBlock" class="not-signed-in pull-right" role="navigation" aria-label="Register for an account">
+        <div class="Xsignin-block-top Xtop-right">
+            <em><strong>Register for exclusive email offers & features</strong></em>
+        </div>
+        <div class="signin-block-bottom" style="text-align: right; margin-top: 0;">
+            <span class="signin-left">
+                <a href="/signin" title="Click to sign in to your account">Sign In</a>
+            </span>
+
+            <span class="signin-right">
+                <a href="/register" title="Click to register for an account on our website">Register</a>
+            </span>
+        </div>
+    </div>
+                
+
+            </div>
+        </div>
+
+        <!-- header feature section -->
+        
+    </div>
+                </div>
+            </div>
+
+            <div id="mobileHeader" class="row visible-xs" style="display:none;">
+                <nav class="navbar navbar-default navbar-fixed-top mobile_top_navbar">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile_nav_collapsible">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- icons for mobile nav bar is a feature section: -->
+            <div class="pull-right mobile-navbar-icons">
+            <ul id="feature-section-2400053" class="nav navbar-nav mobile-bar pull-right ">
+        <li id="feature-box-1750074" class="first one-wide">
+    <a href="/ads/">
+    </a><a href="/ads/">
+        <span class="menu-icon" style="background-image: url(&#x27;images/Ads_icon_mobile_inverse.png&#x27;)"></span>
+        Ads
+    </a>
+</li>
+</ul>
+ 
+            </div>
+
+            <!-- logo -->
+                            <img class="logo" src="images/bc1ea3_LongfellowMarket_Logo1.jpg" aria-hidden="true" alt role="presentation">
+                    </div>
+
+        <!-- collapse menu: -->
+        <div id="mobile_nav_collapsible" class="navbar-collapse navbar-default collapse" itemscope itemtype="//schema.org/LocalBusiness">
+
+                        <div class="collapsible-item address">
+                                    <strong>Location:</strong> 3815 East Lake Street, Minneapolis, MN
+                    <a href="/location" style="padding-left: 10px;">Map <span class=" glyphicon glyphicon-map-marker"></span></a>
+                            </div>
+
+            <div class="collapsible-item store-hours">
+                <strong>Hours: </strong>
+                Monday - Sunday • 7:00 AM - 8:00 PM •
+            </div>
+
+            <div class="collapsible-item phone-number">
+                <strong>Phone: </strong>
+                <span itemprop="telephone">(612) 353-5078</span>
+            </div>
+
+            <div class="collapsible-item menu">
+                <strong>Navigation: </strong>
+                <nav>
+    <h2 class="sr-only">Mobile Navigation</h2>
+    <ul class="nav nav-default menu">
+                    <li class="nav_item nav_item_44 ">
+            My Account:
+            <ul class="nav nav-default menu">
+                                <li class="nav_item nav_item_44 ">
+                    <a href="/signin">Sign In</a>
+                </li>
+                                <li class="nav_item nav_item_44 ">
+                    <a href="/register">Register</a>
+                </li>
+                            </ul>
+        </li>
+                            <li class="nav_item nav_item_28 ">
+            Ads & Coupons:
+            <ul class="nav nav-default menu">
+                                <li class="nav_item nav_item_28 ">
+                    <a href="/ads">Ad Specials</a>
+                </li>
+                                <li class="nav_item nav_item_28 ">
+                    <a href="/coupons">Online Coupons</a>
+                </li>
+                            </ul>
+        </li>
+                            <li class="nav_item nav_item_4 ">
+            <a href="/jobs" target>Career Opportunities</a>
+        </li>
+                            <li class="nav_item nav_item_2 ">
+            <a href="/about" target>About Us</a>
+        </li>
+                            <li class="nav_item nav_item_7 ">
+            <a href="/recipes" target>Recipes</a>
+        </li>
+                            <li class="nav_item nav_item_8 ">
+            <a href="/health_wellness" target>Health & Wellness</a>
+        </li>
+                            <li class="nav_item nav_item_10 ">
+            <a href="/news" target>News</a>
+        </li>
+                            <li class="nav_item nav_item_19 ">
+            <a href="/departments" target>Departments</a>
+        </li>
+                            <li class="nav_item nav_item_22 ">
+            <a href="/contact" target>Contact</a>
+        </li>
+                </ul>
+</nav>
+             </div>
+
+            <div class="collapsible-item close">
+                <a data-toggle="collapse" data-target="#mobile_nav_collapsible" href="#">close</a>
+            </div>
+
+        </div>
+        <!--/#mobile_nav_collapsible -->
+    </div>
+    <!--/.container -->
+</nav>
+
+
+            </div>
+
+            <div id="mainNav" class="row hidden-xs">
+                <nav class="navbar main_navigation">
+    <h2 class="sr-only">Featured Links</h2>
+    <ul class="inline-nav nav_color">
+                    <li class="nav_item nav_item_28 dropdown">
+            <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ads & Coupons</a>
+            <ul class="dropdown-menu nav_color">
+                                <li>
+                    <a href="/ads" target>Ad Specials</a>
+                </li>
+                                <li>
+                    <a href="/coupons" target>Online Coupons</a>
+                </li>
+                            </ul>
+        </li>
+                            <li class="nav_item nav_item_29 dropdown">
+            <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Departments</a>
+            <ul class="dropdown-menu nav_color">
+                                <li>
+                    <a href="/departments/meat" target>Quality Meat</a>
+                </li>
+                                <li>
+                    <a href="/departments/produce" target>Bountiful Produce</a>
+                </li>
+                                <li>
+                    <a href="/departments/deli" target>Delectable Deli</a>
+                </li>
+                                <li>
+                    <a href="/departments/bakery" target>Fresh Bakery</a>
+                </li>
+                                <li>
+                    <a href="/departments/frozenfoods" target>Frozen Favorites</a>
+                </li>
+                                <li>
+                    <a href="/departments/dairy" target>Delicious Dairy</a>
+                </li>
+                                <li>
+                    <a href="/departments/grocery" target>Grocery Goods</a>
+                </li>
+                                <li>
+                    <a href="/departments/healthnutrition" target>Organic</a>
+                </li>
+                            </ul>
+        </li>
+                            <li class="nav_item nav_item_7">
+            <a href="/recipes" target>Recipes</a>
+        </li>
+                </ul>
+</nav>                 
+            </div>
+        </header>
+
+        <div id="pageContent" class="row">
+
+                        <main class="col-lg-10 col-lg-offset-1 col-med-12"> <!-- keeps content centered within page_wrap -->
+                <h1 class="sr-only">Welcome to Longfellow Market</h1>
+                <div class="slideshow-responsive">
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+                        <div class="swiper-slide slide_1932340 slideshow_175847">
+                <h2 id="slide_1932340_title" class="sr-only">Flavorful Meals</h2>
+                                    <img src="images/1-FlavorfulMeals.jpg" class="slide_image_1802010" alt="Flavorful Meals" aria-describedby="slide_1932340_content">
+                                <div id="slide_1932340_content" class="sr-only">
+                    Find everything you need to give your family the fresh and flavorful meals they deserve!
+                </div>
+            </div>
+                        <div class="swiper-slide slide_1932341 slideshow_175847">
+                <h2 id="slide_1932341_title" class="sr-only">Fresh Produce</h2>
+                                    <img src="images/2-FreshProduce.jpg" class="slide_image_1802011" alt="Fresh Produce" aria-describedby="slide_1932341_content">
+                                <div id="slide_1932341_content" class="sr-only">
+                    We have a wide variety of fresh fruits and vegetables that will wake up your taste buds.
+                </div>
+            </div>
+                        <div class="swiper-slide slide_1932342 slideshow_175847">
+                <h2 id="slide_1932342_title" class="sr-only">Spring Soups</h2>
+                                    <img src="images/3-SpringSoups.jpg" class="slide_image_1802012" alt="Spring Soups" aria-describedby="slide_1932342_content">
+                                <div id="slide_1932342_content" class="sr-only">
+                    We have the best ingredients to choose for your recipes.
+                </div>
+            </div>
+                        <div class="swiper-slide slide_1932343 slideshow_175847">
+                <h2 id="slide_1932343_title" class="sr-only">Savory Goodness</h2>
+                                    <img src="images/4-SavoryGoodness.jpg" class="slide_image_1802013" alt="Savory Goodness" aria-describedby="slide_1932343_content">
+                                <div id="slide_1932343_content" class="sr-only">
+                    Our meat is packed with fabulous flavor and exceptional quality.
+                </div>
+            </div>
+                    </div>
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button swiper-button-next glyphicon glyphicon-menu-right"><span class></span></div>
+        <div class="swiper-button swiper-button-prev glyphicon glyphicon-menu-left"><span class></span></div>
+    </div>
+    <div class="slide-shadow"></div>
+
+</div>
+
+
+                <div class="dotted-header" role="presentation">
+                    <div class="dotted-header-content no-transform title title-h1 page-color" role="presentation">Welcome to Longfellow Market</div>
+                </div>
+
+                <!-- top-row feature section -->
+                <div id="feature-section-2400051" class="feature-section top-row-section row ">
+    <h2 class="sr-only">Top Site Features</h2>
+    <ul class="feature-section-container">
+                    <li id="feature-box-1750052" class="feature-box bootstrap_top_row one-wide col-sm-12 col-md-6 first one-wide" data-box-template="feature_sections.box_content.box_image_content">
+<style>
+    #feature-box-1750052 .feature-box-background {
+        background-image: url("images/meatsFiller.png");
+    }
+    #feature-box-1750052 .feature-box-background .inner {
+        padding-top: 31.521739130435%; /* height/width of image */
+    }
+
+        @media (max-width: 767px) {
+        #feature-box-1750052 .feature-box-background {
+            background-image: url("images/meatsFiller_mobile.png");
+        }
+        #feature-box-1750052 .feature-box-background .inner {
+            padding-top: 33.333333333333%; /* height/width of image */
+        }
+    }
+    </style>
+
+<h3 class="sr-only">Meat Department</h3>
+<a href="/departments/meat/" target="_self" class>
+    <div class="feature-box-background feature-box-image-4053 ">
+        <span class="inner">Goto Meat Department</span>
+    </div>
+</a>
+</li>
+                    <li id="feature-box-1750053" class="feature-box bootstrap_top_row one-wide col-sm-12 col-md-6 second one-wide" data-box-template="feature_sections.box_content.box_image_content">
+<style>
+    #feature-box-1750053 .feature-box-background {
+        background-image: url("images/produceFiller.png");
+    }
+    #feature-box-1750053 .feature-box-background .inner {
+        padding-top: 31.521739130435%; /* height/width of image */
+    }
+
+        @media (max-width: 767px) {
+        #feature-box-1750053 .feature-box-background {
+            background-image: url("images/produceFiller_mobile.png");
+        }
+        #feature-box-1750053 .feature-box-background .inner {
+            padding-top: 33.333333333333%; /* height/width of image */
+        }
+    }
+    </style>
+
+<h3 class="sr-only">Produce Department</h3>
+<a href="/departments/produce/" target="_self" class>
+    <div class="feature-box-background feature-box-image-4055 ">
+        <span class="inner">Goto Produce Department</span>
+    </div>
+</a>
+</li>
+            </ul>
+</div> 
+
+                <!-- standard feature section -->
+                <div id="feature-section-2400001" class="feature-section bootstrap_three_wide three-wide-section row ">
+    <h2 class="sr-only">Our Website Features</h2>
+    <ul class="feature-section-container">
+            <li id="feature-box-1750001" class="feature-box bootstrap_three_wide one-wide col-sm-4 weekly_ads first one-wide" data-box-template="feature_sections.box_content.box_image_content" style> 
+<style>
+    #feature-box-1750001 .feature-box-background {
+        background-image: url("images/shop_deals.jpg");
+    }
+    #feature-box-1750001 .feature-box-background .inner {
+        padding-top: 83.333333333333%; /* height/width of image */
+    }
+
+    </style>
+
+<h3 class="sr-only">Weekly Ad</h3>
+<a href="/ads/" target="_self" class>
+    <div class="feature-box-background feature-box-image-4001 ">
+        <span class="inner">Goto Weekly Ad</span>
+    </div>
+</a>
+</li>
+            <li id="feature-box-1750006" class="feature-box bootstrap_three_wide one-wide col-sm-4 register second one-wide" data-box-template="feature_sections.box_content.box_image_content" style> 
+<style>
+    #feature-box-1750006 .feature-box-background {
+        background-image: url("images/register.jpg");
+    }
+    #feature-box-1750006 .feature-box-background .inner {
+        padding-top: 83.333333333333%; /* height/width of image */
+    }
+
+    </style>
+
+<h3 class="sr-only">Register</h3>
+<a href="/register/" target="_self" class>
+    <div class="feature-box-background feature-box-image-4006 ">
+        <span class="inner">Goto Register</span>
+    </div>
+</a>
+</li>
+            <li id="feature-box-1750003" class="feature-box bootstrap_three_wide one-wide col-sm-4 recipes third one-wide" data-box-template="feature_sections.box_content.box_image_content" style> 
+<style>
+    #feature-box-1750003 .feature-box-background {
+        background-image: url("images/lets_cook.jpg");
+    }
+    #feature-box-1750003 .feature-box-background .inner {
+        padding-top: 83.333333333333%; /* height/width of image */
+    }
+
+    </style>
+
+<h3 class="sr-only">Recipes</h3>
+<a href="/recipes/" target="_self" class>
+    <div class="feature-box-background feature-box-image-4003 ">
+        <span class="inner">Goto Recipes</span>
+    </div>
+</a>
+</li>
+        </ul>
+</div> 
+
+                <!-- site feature section -->
+                
+                <!-- site feature section -->
+                
+                <hr class="dotted">
+
+                <!-- DVC feature section -->
+                
+            </main>
+
+                    <div class="modal fade" id="signup-invitation" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <div class="modal-title title title-h2" style="font-weight: bold;" id="gridSystemModalLabel">Signup For Savings</div>
+      </div>
+      <div class="modal-body">
+
+        
+        <div class="row signup_section email_subscribe" id="signup_invitation_email_subscribe">
+          <div id="signup_invitation_email_subscribe_ajax_message"></div>
+
+          
+          <div id="signup_invitation_email_subscribe_form">
+            <div class="col-sm-12">
+                <div class="bullet_color section-text">Receive our ad and special offers in your inbox — Subscribe to our mailing list</div>
+            </div>
+
+            <form>
+
+              <div class="col-sm-5 split-fields-left">
+                  <div class="form-groupx">
+                      <label class="sr-only" for="signup_invitation_first_name">First Name</label>
+                      <input type="text" class="form-control input-lg" name="first_name" value id="signup_invitation_first_name" placeholder="First name...">
+                      <div class="help-block with-errors"></div>
+                  </div>
+              </div>
+              <div class="col-sm-5 split-fields-right">
+                  <div class="form-groupx">
+                      <label class="sr-only" for="signup_invitation_last_name">Last Name</label>
+                      <input type="text" class="form-control input-lg" name="last_name" value id="signup_invitation_last_name" placeholder="Last name...">
+                      <div class="help-block with-errors"></div>
+                  </div>
+              </div>
+
+              <div class="col-sm-10">
+                  <div class="form-groupx">
+                      <label class="sr-only" for="signup_invitation_email_address">Email Address</label>
+                      <input type="text" class="form-control input-lg" name="email_address" value id="signup_invitation_email_address" placeholder="Email address...">
+                      <div class="help-block with-errors"></div>
+                  </div>
+              </div>
+
+              <div class="col-sm-12">
+                  <input type="hidden" name="location_id" value="21171">
+                  <button type="submit" class="btn button_color">subscribe</button>
+              </div>
+
+            </form>
+
+          </div>
+
+          
+          <div id="signup_invitation_email_subscribe_success" style="display:none;">
+            <div class="col-sm-12">
+                <div class="bullet_color section-text">Thank you for signing up</div>
+
+                <p>
+                    If you would like to change your settings, or access our other features, we encourage you to also <a href="/register">register for an account</a>.
+                </p>
+                <p>
+                    You can un-subscribe anytime, hassle-free. Simply click the "Unsubscribe" link at the bottom of any email we send you.
+                </p>
+
+            </div>
+
+          </div>
+
+
+          
+          <div id="signup_invitation_email_subscribe_existing" style="display:none;">
+              <div class="col-sm-12">
+                  <div class="bullet_color section-text">Welcome Back!</div>
+
+                  <p>
+                      Since you're already signed up with us, there is nothing you need to do to continue receiving promotional offers from Longfellow Market
+                  </p>
+                  <p>
+                      If you would like to change your settings, or access our other features, we encourage you to also <a href="/register">register for an account</a>.
+                  </p>
+              </div>
+          </div>
+
+        </div>
+
+        
+        <div class="row text_alerts_subscribe" id="signup_invitation_text_alerts_subscribe">
+                  </div>
+
+        
+                <div class="row store_app" id="signup_invitation_store_app">
+
+          <div class="col-sm-12">
+              <div class="bullet_color section-text">Receive special in-store offers using our mobile app</div>
+          </div>
+
+          <div class="col-sm-7">
+            <section id="storeAppFooterNav" role="region" aria-label="Our Mobile App">
+    <h2 class="footer-title col-xs-12 text-left">Download Our App</h2>
+
+    <div class="col-md-5 col-xs-6">
+        <a id="storeAppFooterLogo" href="/app" title="Click to learn about our mobile app">
+            <span class="sr-only">Learn about our mobile app</span>
+        </a>
+    </div>
+
+    <div class="col-md-7 col-xs-6">
+        <a id="storeAppFooterAppleStoreLink" class="app_store_badge" href="https://itunes.apple.com/us/app/smartwhisk-grocery-shopping/id965368381" target="_blank" title="Download our mobile app from the Apple Store">
+            <span class="sr-only">Download our mobile app from the Apple Store</span>
+        </a>
+    </div>
+
+    <div class="col-md-7 col-xs-6">
+        <a id="storeAppFooterGooglePlayLink" class="app_store_badge" href="https://play.google.com/store/apps/details?id=com.mediasolutionscorp.storeapp" target="_blank" title="Download our mobile app from Google Play">
+            <span class="sr-only">Download our mobile app from Google Play</span>
+        </a>
+    </div>
+</section>
+          </div>
+
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default pull-right button_color" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+                    <div class="clearfix"></div>
+
+        </div>
+
+    </div>
+    <!-- /#pageContainer -->
+    <div id="pageContainerSpacer"></div>
+
+    
+
+    <footer>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="footer_nav_container col-sm-7 hidden-sm hidden-xs">
+                
+                <nav class="footer-categorized-menu" aria-label="Full Site Menu">
+    <h2 class="sr-only">Full Site Menu</h2>
+    <ul class="col-sm-3">
+                    <li class="nav_item nav_item_36">
+            <div class="category-header">Our Store</div>
+                        <ul class="group-list">
+                                <li>
+                    <a href="/about" target class="footer_nav_item_link">About Us</a>
+                </li>
+                                                <li>
+                    <a href="/location" target class="footer_nav_item_link">Location</a>
+                </li>
+                                                <li>
+                    <a href="/departments" target class="footer_nav_item_link">Departments</a>
+                </li>
+                                                <li>
+                    <a href="/contact" target class="footer_nav_item_link">Contact</a>
+                </li>
+                                            </ul>
+        </li>
+                                        </ul>
+            <ul class="col-sm-3">
+                                        <li class="nav_item nav_item_37">
+            <div class="category-header">Features</div>
+                        <ul class="group-list">
+                                <li>
+                    <a href="/recipes" target class="footer_nav_item_link">Recipes</a>
+                </li>
+                                                <li>
+                    <a href="/health_wellness" target class="footer_nav_item_link">Health & Wellness</a>
+                </li>
+                                                <li>
+                    <a href="/nu_val" target class="footer_nav_item_link">Nu-Val</a>
+                </li>
+                                            </ul>
+        </li>
+                                    <li class="nav_item nav_item_28">
+            <div class="category-header">Ads & Coupons</div>
+                        <ul class="group-list">
+                                <li>
+                    <a href="/ads" target class="footer_nav_item_link">Ad Specials</a>
+                </li>
+                                                <li>
+                    <a href="/coupons" target class="footer_nav_item_link">Online Coupons</a>
+                </li>
+                                            </ul>
+        </li>
+                                        </ul>
+            <ul class="col-sm-3">
+                                        <li class="nav_item nav_item_39">
+            <div class="category-header">My Account</div>
+                        <ul class="group-list">
+                                <li>
+                    <a href="/signin" target class="footer_nav_item_link">Sign In</a>
+                </li>
+                                                <li>
+                    <a href="/register" target class="footer_nav_item_link">Register</a>
+                </li>
+                                            </ul>
+        </li>
+                                    <li class="nav_item nav_item_10">
+            <a class="footer_nav_item_link" href="/news" target>News</a>
+        </li>
+                                            <li class="nav_item nav_item_4">
+            <a class="footer_nav_item_link" href="/jobs" target>Career Opportunities</a>
+        </li>
+                                                </ul>
+            <ul class="col-sm-3">
+                            </ul>
+</nav>
+                 </div>
+
+                                <div class="store_app_container col-md-3 col-xs-8 text-center">
+                                            <section id="storeAppFooterNav" role="region" aria-label="Our Mobile App">
+    <h2 class="footer-title col-xs-12 text-left">Download Our App</h2>
+
+    <div class="col-md-5 col-xs-6">
+        <a id="storeAppFooterLogo" href="/app" title="Click to learn about our mobile app">
+            <span class="sr-only">Learn about our mobile app</span>
+        </a>
+    </div>
+
+    <div class="col-md-7 col-xs-6">
+        <a id="storeAppFooterAppleStoreLink" class="app_store_badge" href="https://itunes.apple.com/us/app/smartwhisk-grocery-shopping/id965368381" target="_blank" title="Download our mobile app from the Apple Store">
+            <span class="sr-only">Download our mobile app from the Apple Store</span>
+        </a>
+    </div>
+
+    <div class="col-md-7 col-xs-6">
+        <a id="storeAppFooterGooglePlayLink" class="app_store_badge" href="https://play.google.com/store/apps/details?id=com.mediasolutionscorp.storeapp" target="_blank" title="Download our mobile app from Google Play">
+            <span class="sr-only">Download our mobile app from Google Play</span>
+        </a>
+    </div>
+</section>
+                                    </div>
+                
+                <div class="social_icons_container col-md-2 col-xs-4 pull-right text-right">
+                    <section id="socialMediaLinks" role="region" aria-label="Social Media Links">
+
+        <h2 id="socialMediaLinksTitle" class="sr-only">Social Media</h2>
+
+    <ul id="socialMediaLinksList">
+                <li class="facebook-link">
+            <a href="/facebook" target="_blank" title="Goto to our Facebook page">
+                <span class="sr-only">Goto to our Facebook page</span>
+            </a>
+        </li>
+        
+        
+        
+            </ul>
+    </section>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="footer_nav_container visible-sm" style="display:none;">
+                
+                <nav class="footer-categorized-menu" aria-label="Full Site Menu">
+    <h2 class="sr-only">Full Site Menu</h2>
+    <ul class="col-sm-3">
+                    <li class="nav_item nav_item_36">
+            <div class="category-header">Our Store</div>
+                        <ul class="group-list">
+                                <li>
+                    <a href="/about" target class="footer_nav_item_link">About Us</a>
+                </li>
+                                                <li>
+                    <a href="/location" target class="footer_nav_item_link">Location</a>
+                </li>
+                                                <li>
+                    <a href="/departments" target class="footer_nav_item_link">Departments</a>
+                </li>
+                                                <li>
+                    <a href="/contact" target class="footer_nav_item_link">Contact</a>
+                </li>
+                                            </ul>
+        </li>
+                                        </ul>
+            <ul class="col-sm-3">
+                                        <li class="nav_item nav_item_37">
+            <div class="category-header">Features</div>
+                        <ul class="group-list">
+                                <li>
+                    <a href="/recipes" target class="footer_nav_item_link">Recipes</a>
+                </li>
+                                                <li>
+                    <a href="/health_wellness" target class="footer_nav_item_link">Health & Wellness</a>
+                </li>
+                                                <li>
+                    <a href="/nu_val" target class="footer_nav_item_link">Nu-Val</a>
+                </li>
+                                            </ul>
+        </li>
+                                    <li class="nav_item nav_item_28">
+            <div class="category-header">Ads & Coupons</div>
+                        <ul class="group-list">
+                                <li>
+                    <a href="/ads" target class="footer_nav_item_link">Ad Specials</a>
+                </li>
+                                                <li>
+                    <a href="/coupons" target class="footer_nav_item_link">Online Coupons</a>
+                </li>
+                                            </ul>
+        </li>
+                                        </ul>
+            <ul class="col-sm-3">
+                                        <li class="nav_item nav_item_39">
+            <div class="category-header">My Account</div>
+                        <ul class="group-list">
+                                <li>
+                    <a href="/signin" target class="footer_nav_item_link">Sign In</a>
+                </li>
+                                                <li>
+                    <a href="/register" target class="footer_nav_item_link">Register</a>
+                </li>
+                                            </ul>
+        </li>
+                                    <li class="nav_item nav_item_10">
+            <a class="footer_nav_item_link" href="/news" target>News</a>
+        </li>
+                                            <li class="nav_item nav_item_4">
+            <a class="footer_nav_item_link" href="/jobs" target>Career Opportunities</a>
+        </li>
+                                                </ul>
+            <ul class="col-sm-3">
+                            </ul>
+</nav>
+                 </div>
+            </div>
+
+            <div class="row">
+                <div class="copyright_container col-sm-12 text-right">
+                    Copyright © 2019 Media Solutions Corp. All rights reserved. - <a href="/privacy">Terms & Privacy Policy</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+        <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        spaceBetween: 30,
+        centeredSlides: true,
+        a11y: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+               return '<span class="' + className + '"></span>';
+            }
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        },
+        autoplay: {
+            delay: 4500,
+            disableOnInteraction: true
+        },
+        //autoplay: false,
+        keyboard: true
+      });
+    </script>
+            <script type="text/javascript" src="js/jquery.validator.js"></script>
+        <script type="text/javascript" src="js/jquery.validator-bootstrap.js"></script>
+        <script type="text/javascript" src="js/jquery.showLoading.js"></script>
+
+    <script>
+        eblast_server_url = "https://eblasts.mschost.net";
+    </script>
+    <script type="text/javascript" src="js/modal.js"></script>
+    <script type="text/javascript" src="js/subscribe_email.js"></script>
+    <script type="text/javascript" src="js/subscribe-form.js"></script>
+    <script type="text/javascript" src="js/subscribe_textalert.js"></script>
+    <script type="text/javascript" src="js/textalert-form.js"></script>
+
+    <script>
+    
+      
+      
+      
+            $(function() {
+        // Setup isScrolling variable
+        var isScrolling;
+
+        var scrollListener = function ( event ) {
+
+          // Clear our timeout throughout the scroll
+          window.clearTimeout( isScrolling );
+
+          // Set a timeout to run after scrolling ends
+          isScrolling = setTimeout(function() {
+
+            signup_invitation_show_modal(2000);
+            window.removeEventListener('scroll', scrollListener);
+
+          }, 66);
+
+        }
+
+        // Listen for scroll events
+        window.addEventListener('scroll', scrollListener , false);
+      });
+            
+        </script>
+
+<script type="text/javascript">
+
+    (function ($) {
+
+        // allow closing nav by clicking the body
+        var collapse_mobile_nav = function(e) {
+            if($(e.target).hasClass('dropdown-toggle')) {
+                //e.stopPropagation()
+                return;
+            }
+            return $('#mobile_nav_collapsible').collapse('hide');
+        }
+
+        $('#mobile_nav_collapsible').on('show.bs.collapse', function() {
+            $('body').on('click', collapse_mobile_nav);
+        });
+
+        $('#mobile_nav_collapsible').on('hide.bs.collapse', function() {
+            $('body').off('click', collapse_mobile_nav);
+        });
+
+    }(jQuery));
+
+
+</script>
+
+
+    <script type="text/javascript" src="js/template.js"></script>
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  
+  ga('create', 'UA-24021706-1', 'auto', 'mscTracker');
+
+ga('mscTracker.send', 'pageview');
+
+  
+  
+  
+  
+</script>
+
+    
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4fab30c656e57359"></script>
+    
+
+
+</body></html>

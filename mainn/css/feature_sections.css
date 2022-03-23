@@ -1,0 +1,219 @@
+
+
+.feature-box {
+  /*border:1px solid black;*/
+}
+
+.feature-section {
+    margin-top:20px;
+    margin-bottom:20px;
+    list-style:none;
+}
+
+.feature-section ul {
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+
+.feature-box .feature-box-background { /* this will have a css image applied in the box content template */
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.feature-box .feature-box-background .inner {
+    display: block;
+    height: 0;
+}
+
+@media (max-width: 1199px) { /* md and smaller: */
+    .feature-section {
+        margin-left:20px;
+        margin-right:20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .feature-box.one-wide {
+        padding: 20px 19%;
+    }
+}
+
+@media (max-width: 460px) {
+    .feature-box.one-wide {
+        padding: 20px 15%;
+    }
+}
+
+/* -----  header-feature-section ----- */
+
+.feature-section.header-feature-section {
+    margin-top: 0;
+    margin-bottom: 0;
+    min-height: 110px;
+}
+
+.feature-section.header-feature-section .feature-section-container{
+    /* absolute to .page-header-right */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.feature-section.header-feature-section .feature-box{
+    float: left;
+    margin-left: 20px;
+    width: 171px;
+    height: 110px;
+}
+
+@media (max-width: 991px) {
+  .feature-section.header-feature-section {
+    min-height: 80px;
+  }
+  .feature-section.header-feature-section .feature-box{
+    margin-left: 10px;
+    width: 124px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 1199px) { /* md and smaller: override .feature-section change*/
+    .feature-section.header-feature-section {
+        margin-left:0;
+        margin-right:0;
+    }
+}
+
+
+/*-- top-row feature section --*/
+
+
+@media (max-width: 767px) {
+    .feature-section.top-row-section .feature-box.one-wide {
+        padding: 10px 10%;
+    }
+}
+
+
+/* -----  ribbon-icon-content ----- */
+
+.feature-box .ribbon-icon-content {
+  position:relative;
+  width:100%;
+  height:145px; /* height 100% wirk in FF and Chrome, but Safari needs height set */
+}
+
+.feature-box .ribbon-icon-content .ribbon-image {
+  width:100%;
+  height:69%;
+  top:14%;
+  position:absolute;
+}
+
+.feature-box .ribbon-icon-content .floating-icon-image {
+  height:100%;
+  position:absolute;
+  right:15%;
+  top: 0;
+}
+
+.feature-box .ribbon-icon-content .floating-icon-image {
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.feature-box .ribbon-icon-content .floating-text-div {
+  position:absolute;
+  font-size: 14px;
+  line-height: 14px;
+  height:69%;
+  width: 70%;
+  left:3%;
+  top: 9%;
+  padding-left:5%;
+  padding-right:5%;
+  padding-top: 3%;
+  padding-bottom: 1%;
+}
+
+.feature-box .ribbon-icon-content .floating-text-div h3 {
+  font-weight:bold;
+  margin:0;
+  font-size:1.3em;
+}
+.feature-box .ribbon-icon-content .floating-text-div .body {
+  margin:0;
+  font-size:0.9em;
+}
+.feature-box .ribbon-icon-content .floating-text-div .footer {
+  margin:0;
+  font-size:0.7em;
+}
+
+@media (max-width: 991px) {
+  .feature-box .ribbon-icon-content {
+    height: 174px;
+  }
+  .feature-box .ribbon-icon-content .floating-text-div {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .feature-box .ribbon-icon-content .floating-text-div {
+    font-size: 20px;
+    line-height: 20px;
+    width: 70%;
+  }
+  .feature-box .ribbon-icon-content .floating-icon-image {
+    display: none;
+  }
+
+  .feature-box .ribbon-icon-content .ribbon-image {
+    width:100%;
+    height:100%;
+    position:relative;
+    background-position: 0 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .feature-box .ribbon-icon-content .floating-text-div {
+    font-size: 18px;
+    line-height: 18px;
+    width: 70%;
+}
+
+@media (max-width: 550px) {
+
+  .feature-box .ribbon-icon-content .floating-text-div {
+    width: 90%;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 450px) {
+  .feature-box .ribbon-icon-content .floating-text-div {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+/* sm and smaller: */
+@media (max-width: 991px) {
+
+}
+

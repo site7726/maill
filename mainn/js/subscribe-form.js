@@ -1,0 +1,1 @@
+"use strict";$(document).ready((function(){$("#signup_invitation_email_subscribe_form form").validate({ignore:".ignore",rules:{email_address:{required:!0,email:!0}},messages:{email_address:{required:"Please enter an email address"}}})}));
